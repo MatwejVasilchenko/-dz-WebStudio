@@ -5,10 +5,12 @@
  .Web {
 	font-family:'Raleway' ;
   font-size: 26px; 
+  color: #0000ff;
  }
  .Studio  {
 	font-family:'Oleo Script';
   font-size: 26px;
+  color: black;
  }
  a {
     text-decoration: none; 
@@ -51,58 +53,22 @@
   font-family:'Roboto';
   margin-left:250px;
   margin-right: auto;
-  font-weight: 700;
+  font-weight: 700px;
+  margin-left:400px;
+  padding-top: 200px;
 }
 
-.Text2 {
+.Text {
   font-family:'Roboto';
   font-weight: 700;
+  display: flex;
+  margin-right:400;
 }
-.Text3 {
+.TextH {
   font-family:'Roboto';
-  font-weight: 700;
-}
-.Text4 {
-  font-family:'Roboto';
-  font-weight: 700;
-}
-.Text5 {
-  font-family:'Roboto';
-  font-weight: 700;
-}
-.Text6 {
-  font-family:'Roboto';
-  font-weight: 400;
-  display: table;
-  margin: 10 auto; /* для центрирования display: table; не нужно указывать ширину блока, она рассчитывается самостоятельно */ 
-  white-space: pre-line; /* не нужен <br> */ 
-  word-wrap: break-word; /* чтобы слова переносились на маленьком экране */ 
-}
-.Text7 {
-  font-family:'Roboto';
-  font-weight: 400;
-  display: table;
-  margin: 10 auto; /* для центрирования display: table; не нужно указывать ширину блока, она рассчитывается самостоятельно */ 
-  white-space: pre-line; /* не нужен <br> */ 
-  word-wrap: break-word; /* чтобы слова переносились на маленьком экране */ 
+  display: flex;
 }
 
-.Text8 {
-  font-family:'Roboto';
-  font-weight: 400;
-  display: table;
-  margin: 10 auto; /* для центрирования display: table; не нужно указывать ширину блока, она рассчитывается самостоятельно */ 
-  white-space: pre-line; /* не нужен <br> */ 
-  word-wrap: break-word; /* чтобы слова переносились на маленьком экране */ 
-}
-.Text9 {
-  font-family:'Roboto';
-  font-weight: 400;
-  display: table;
-  margin: 10 auto; /* для центрирования display: table; не нужно указывать ширину блока, она рассчитывается самостоятельно */ 
-  white-space: pre-line; /* не нужен <br> */ 
-  word-wrap: break-word; /* чтобы слова переносились на маленьком экране */ 
-}
 .button {
   font-family:'Roboto';
   font-weight: 700;
@@ -112,9 +78,13 @@
   height: 50px;
   top: 410px;
   left: 726px;
-  margin-left:450px;
+  margin-left:550px;
   margin-right: auto;
+}
+.TextAndButton{
 
+height: 500px;
+background-color:grey ;
 }
 .verse {
   display: table;
@@ -122,7 +92,7 @@
   white-space: pre-line; /* не нужен <br> */ 
   word-wrap: break-word; /* чтобы слова переносились на маленьком экране */ 
 }
-.Text10 {
+.WhatWeDo {
   font-family:'Roboto';
   width: 366px;
   height:42px ;
@@ -201,6 +171,11 @@ top: 2268px;
 margin-left:215;
 font-weight: 400;
 }
+li {
+list-style: none;
+
+}
+
 
 
 
@@ -212,66 +187,92 @@ font-weight: 400;
 
 </head>
 <body link="#000000" vlink="#000000" alink="#0000ff">
-
- <a class="Web"  href="URL"  >Web</a>
-    <a class="Studio" href="URL"  >Studio
-    </a>
-    <a class="Studio2" href="URL">Студія
-    </a>
-    <a class="PF" href="URL">Портфоліо
-    </a>
-    <a class="Conacts" href="URL">Контакти
-    </a>
-    <a class="GM" href="URL">info@devstudio.com
-    </a>
-    <a class="Telephone" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
-<h1 class="Text1">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ </h1>
-<button class="button">Замовити послугу</button>
-<h2 class="Text2">УВАГА ДО ДЕТАЛЕЙ</h2>
-<h3 class="Text6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-  Voluptatem veritatis exercitationem velit magnam iure.</h3>
-<h2 class="Text3">ПУНКТУАЛЬНІСТЬ</h2>
-<h3  class="Text7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</h3>
-<h2 class="Text4">ПЛАНУВАННЯ
-</h2>
-<h3 class="Text8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</h3>
-<h2 class="Text5">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-<h3 class="Text9">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</h3>
-<h1 class="Text10">Чим ми займаємося</h1>
+  <!-- Header -->
+  <header>
+<a class="Web"  href="URL"  >Web<span class="Studio">Studio</span></a>
+<a class="Studio2" href="URL">Студія</li></a>
+<a class="PF" href="URL">Портфоліо</li></a>
+<a class="Conacts" href="URL">Контакти</li></a>
+<a class="GM" href="URL">info@devstudio.com</a>
+<a class="Telephone" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
+  </header>
+  <!-- /header -->
+  <!-- Main -->
+  <main>
+    <!-- Section Hero -->
+    <section class="TextAndButton"> <h1 class="Text1">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+      <button class="button">Замовити послугу</button>
+      </section>
+<!-- Section Comment to Hero -->
+  <section><ul class="Text">
+<li>
+  <h2>УВАГА ДО ДЕТАЛЕЙ</h2>
+  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptatem veritatis exercitationem velit magnam iure.</p></li>
+<li>
+  <h2>ПУНКТУАЛЬНІСТЬ</h2>
+  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptatem veritatis exercitationem velit magnam iure.</p></li>
+<li>
+  <h2>ПЛАНУВАННЯ</h2>
+  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptatem veritatis exercitationem velit magnam iure.</p></li>
+<li>
+  <h2 class=>СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+  <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    Voluptatem veritatis exercitationem velit magnam iure.</p></li>
+</ul>
+</section>
+<!-- Section What We Do -->
+ <section><h1 class="WhatWeDo">Чим ми займаємося</h1>
 <img class="f1" src="https://s3-alpha-sig.figma.com/img/8dac/6a22/eff34a388bbc6409758a002e5a58c3ca?Expires=1660521600&Signature=GBEOdtYtwUW1x5oU1xjIvPRIzDqxI5t5LFaP2m~uDKW29PNHj0RhUk9oI-NIwB4cKwANxW6FGioXQFlX9QUAHEhbDXZl4Si5zOxV7bSJrSqIR8eNIh4COoqbiT0RK8a06ja6sg5xBqYsDMYIF2nDEn6VbGpVdOaHNPxqipH1bKbxy9UVl6JwDz-OM39nTPAP8IjMeVkmtdq2zmYKCLy4l4zrRbml2LrTaNxL9JGDRqTj-ak4JDUTEuOB4uxbIk6~wdw5SRh4w-QDBiav3YoQboEQaz3IoqiVHWYFOJsssnEiY89NbBrcexaa41NDceF6sepO7BiNV2TisHbj8K~FPg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img1">
 <img class="f2" src="https://s3-alpha-sig.figma.com/img/0159/0214/fe209b7db875477ca0f844823574082d?Expires=1660521600&Signature=VC7s6ajvvi~-~d1Gc7oyraumscEIfNSz2uyn0BaMircqepbZQTGGtAy5AJIcrZioNezrWu2IbfajbpKSUkawoKU~z~IQQQaEpkB86XK-iP-lpkRsNY-en~rdicMNQc8Cf9y7r5E8q1OQwucBFXtF-U1gtlyuUAY8SqIK38OcpC4U5JakA01Lpp~P5NUozx0L21XUX1fNpTcxzqrTdhD6riOCHjHznj6eRvY4WG1LzwXhWRiw--wkJFXJXhCCWUzZzkknGdbIXmCgXOjR~fc2-Vmq5UKZ-tPrQe9e2Ryzqo-qdO3BLzTAe2Pr9ii-9c5V6rKDm5Wan9F6Ai--YFouoA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img2">
 <img class="f3" src="https://s3-alpha-sig.figma.com/img/4ca1/03f5/ff490664ba91f138b9f708e01d65306a?Expires=1660521600&Signature=K3njAL7kcj9FvVmnAlh3vVwKWitfI~gF6LbzBbZYf0whVd~aNU~pVT7e3SsKUSYJsZrCP6~O47OcrrPVGkwqCVjAHoycXY~8Vf2vfzPKljkRYnbKDoLjaQp8r4D46CG~D4wPUm6pK19Gaym3hjXj~oGST1sI57VqYVmKiAkrFbpWgUbCLfy0LPGPvsy3qSrE9YNO7ZI0NvTHOcFoBOWseQACwMxZCEbeB3hvYk72WqUGiGrgdvGqc4aRrBHlZ8urUQrnY9yfhT46sfI25h1o757oTXoJds-jGv6HyVmLsdRvACtH6JL3otEtKNq6gQKXkTAukQVUh88e7HucLa5WRg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img3">
+</section>
 <br>
-<img class="Hyman1" src="https://s3-alpha-sig.figma.com/img/8c1e/65c1/01b0562402f9066520924acac0be8dc7?Expires=1660521600&Signature=D-PGDvym4RmcR8baOQswZSZd~irKhCBYcvvPXVCcBCtJTSR7aPdCfYBr2PjjoJDZJg2ft1k1lLkVgY5D7bYB5Tf7R32voQ5cB~4BSPluOt66PxpZ0m5EZBKrWLlEawuXpb6ilh1WvO3plai-zc0TEMb4pIUYSTEnpptC5CX3PiXOCtJi-yjskLTp0CLdO030kCaUctRqp9r42qjncclus0xDpXFyKfi8Yz7fsGTRLmvFQicpn8TSsTkmIMv7~KlpfXOT5Tx932EqxZ2GmJ6dD5mMGMTef5R8oV3vA1JQgXjD~Itq4kMYLHKpZLwemV8Bub7u5vouQoFjsupe7NjA5Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img4">
-
-<img class="Hyman2" src="https://s3-alpha-sig.figma.com/img/cbc1/4371/8ed9ff0c05008e3e7ae5285b05efd211?Expires=1660521600&Signature=KPF6zjxt9Hq4JYmrrVOrKcGzHNo8~7k4f~RD8ZRZUYDYpi-bCxOgym4LhtXXe~CWd-HtMEKZMuTS~CTl5yZTXRf-tqx4ZmeOiVATaymXDnMFz~NjOxTuGP33Z5JuZtAzZUDQGZZZ5WWVazepb5M2NF~30J5Isu2gCC~BSZn-LtKmLMtMjCHKQ1mpfzbKVyYa5qN4z9YLlY8ntGhupbgZSCkESZYhikTCQLlPS49BLtwAVTs3xOh-Pf5S0~57a8y2ty20TLI6n6j42kf3hAtqQjPsiARxa5HJCQ2waJvMt7qj1NS5dOT7xl-8PvagH7LiGDqr20TpVHQfm6OnA7q-IA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img5">
-
-<img class="Hyman3" src="https://s3-alpha-sig.figma.com/img/b9f5/1817/c03fb848ed9dfc89543bbe97156c3661?Expires=1660521600&Signature=SWcn8PiuzM8BtkcRcH6kf9SzA6dNsYWY6XmGL6kqatq~8ZQH53u8xS9CkLn17XVdrG7QLtXpl8SzWjX910PHfnfA98QjJwmNk9bBCl4z6-N9FLQvfdFvAcHGZHHzf1lSXTbsRJO8UeAx7ePs9qlWVrKp6FYLDMPjgn4iLo8gytsbDIAEoCPHeU0MYPhzCLFwZ4gcjRj0IMD~wicUHBrH2feob4DYoSr2GCcz7ZTKL5nmZIn8Sy8v5OvvsEJLNdxcMfJBOnmVFs2PK-pcCgEAQqq~oPDQcjnwHUbQDDdySZZ5PKl2ZT1X5mcpiOquOAMab4hfShb8S8qkoIJi8nsvTg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img6">
-
-<img class="Hyman4" src="https://s3-alpha-sig.figma.com/img/335d/4d84/7ff905b2d5f56aa0d2b29aa48e997cd8?Expires=1660521600&Signature=Kt-s8dESA4c6ssVGEOkjCEGuiBjYeozrYKsmqflsgkrA5uVSNtCZYSVG5IPHU8LkZkhkXYe~weXoxf81qgIt2Vqt3-KsTBqcVbhQoXcAn7LJPTqKpn0XQt9ybIDOCtGLL46CTG3sh86ESYaUyPYTHgp5ozWuAs40MRGyLujgNCImaOCVS7ySPh6Z9FuJg12M4hNtbqEnyZxnAp6RyXUPlPCvQwtE2o2K1WPb0Yk-sscldaG4bw-DSasZvNmvNJlLVbNVlqM77NtcqUsQXzC9lY9uIvIz2CMleQedSoAPXvI53yCG5ukOPN5HC9ufE0VuZyOprmMLoMrokOGbEKdPKA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img7">
-<h2 class="1texth1" >Ігор Дем’яненко</h2>
-<h3 class="2texth1" >Product Designer</h3>
-
-<h2 class="1texth2" >Ольга Репіна</h2>
-<h3 class="2texth2" >Frontend Developer</h3>
-
-<h2 class="1texth3" >Микола Тарасов</h2>
-<h3 class="2texth3" >Marketing</h3>
-
-<h2 class="1texth4" >Михайло Єрмаков</h2>
-<h3 class="2texth4" >UI Designer</h3>
+<!-- Section We -->
+<section>
+<ul class="TextH">
+<li>
+  <img class="Hyman1" src="https://s3-alpha-sig.figma.com/img/8c1e/65c1/01b0562402f9066520924acac0be8dc7?Expires=1660521600&Signature=D-PGDvym4RmcR8baOQswZSZd~irKhCBYcvvPXVCcBCtJTSR7aPdCfYBr2PjjoJDZJg2ft1k1lLkVgY5D7bYB5Tf7R32voQ5cB~4BSPluOt66PxpZ0m5EZBKrWLlEawuXpb6ilh1WvO3plai-zc0TEMb4pIUYSTEnpptC5CX3PiXOCtJi-yjskLTp0CLdO030kCaUctRqp9r42qjncclus0xDpXFyKfi8Yz7fsGTRLmvFQicpn8TSsTkmIMv7~KlpfXOT5Tx932EqxZ2GmJ6dD5mMGMTef5R8oV3vA1JQgXjD~Itq4kMYLHKpZLwemV8Bub7u5vouQoFjsupe7NjA5Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img4">
+  <h2 >Ігор Дем’яненко</h2>
+  <p>Product Designer</p>
+</li>
+<li>
+  <img class="Hyman2" src="https://s3-alpha-sig.figma.com/img/cbc1/4371/8ed9ff0c05008e3e7ae5285b05efd211?Expires=1660521600&Signature=KPF6zjxt9Hq4JYmrrVOrKcGzHNo8~7k4f~RD8ZRZUYDYpi-bCxOgym4LhtXXe~CWd-HtMEKZMuTS~CTl5yZTXRf-tqx4ZmeOiVATaymXDnMFz~NjOxTuGP33Z5JuZtAzZUDQGZZZ5WWVazepb5M2NF~30J5Isu2gCC~BSZn-LtKmLMtMjCHKQ1mpfzbKVyYa5qN4z9YLlY8ntGhupbgZSCkESZYhikTCQLlPS49BLtwAVTs3xOh-Pf5S0~57a8y2ty20TLI6n6j42kf3hAtqQjPsiARxa5HJCQ2waJvMt7qj1NS5dOT7xl-8PvagH7LiGDqr20TpVHQfm6OnA7q-IA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img5">
+  <h2>Ольга Репіна</h2>
+  <p>Frontend Developer</p>
+</li>
+<li>
+  <img class="Hyman3" src="https://s3-alpha-sig.figma.com/img/b9f5/1817/c03fb848ed9dfc89543bbe97156c3661?Expires=1660521600&Signature=SWcn8PiuzM8BtkcRcH6kf9SzA6dNsYWY6XmGL6kqatq~8ZQH53u8xS9CkLn17XVdrG7QLtXpl8SzWjX910PHfnfA98QjJwmNk9bBCl4z6-N9FLQvfdFvAcHGZHHzf1lSXTbsRJO8UeAx7ePs9qlWVrKp6FYLDMPjgn4iLo8gytsbDIAEoCPHeU0MYPhzCLFwZ4gcjRj0IMD~wicUHBrH2feob4DYoSr2GCcz7ZTKL5nmZIn8Sy8v5OvvsEJLNdxcMfJBOnmVFs2PK-pcCgEAQqq~oPDQcjnwHUbQDDdySZZ5PKl2ZT1X5mcpiOquOAMab4hfShb8S8qkoIJi8nsvTg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img6">
+  <h2>Микола Тарасов</h2>
+  <p>Marketing</p>
+</li>
+<li>
+  <img class="Hyman4" src="https://s3-alpha-sig.figma.com/img/335d/4d84/7ff905b2d5f56aa0d2b29aa48e997cd8?Expires=1660521600&Signature=Kt-s8dESA4c6ssVGEOkjCEGuiBjYeozrYKsmqflsgkrA5uVSNtCZYSVG5IPHU8LkZkhkXYe~weXoxf81qgIt2Vqt3-KsTBqcVbhQoXcAn7LJPTqKpn0XQt9ybIDOCtGLL46CTG3sh86ESYaUyPYTHgp5ozWuAs40MRGyLujgNCImaOCVS7ySPh6Z9FuJg12M4hNtbqEnyZxnAp6RyXUPlPCvQwtE2o2K1WPb0Yk-sscldaG4bw-DSasZvNmvNJlLVbNVlqM77NtcqUsQXzC9lY9uIvIz2CMleQedSoAPXvI53yCG5ukOPN5HC9ufE0VuZyOprmMLoMrokOGbEKdPKA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="img7">
+  <h2 >Михайло Єрмаков</h2>
+  <p>UI Designer</p>
+</li>
+</ul>
+</section>
 <br>
-<a class="Web" href="URL">Web
-</a>
-<a class="Studio" href="URL">Studio
-</a>
-
-<p class="Map">м. Київ, пр-т Лесі Українки, 26</p>
-
-<a class="GM2" href="mailto:info@example.com">info@example.com</a>
-<br>
-
-<a  class="Tel2" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
-
+  </main>
+  <!-- /Main -->
+  <!-- Footer -->
+  <footer>
+    <a class="Web" href="URL">Web
+    </a>
+    <a class="Studio" href="URL">Studio
+    </a>
+    
+    <p class="Map">м. Київ, пр-т Лесі Українки, 26</p>
+    
+    <a class="GM2" href="mailto:info@example.com">info@example.com</a>
+    <br>
+    
+    <a  class="Tel2" href="tel:+38 099 111 11 11">+38 099 111 11 11</a>
+    
+  </footer>
+  <!-- /Footer -->
 </body>
 </html>
