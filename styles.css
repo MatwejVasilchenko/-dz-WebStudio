@@ -1,0 +1,245 @@
+.Web {
+	font-family:'Raleway' ;
+  font-size: 26px; 
+  color: #0000ff;
+ }
+ .Studio  {
+	font-family:'Oleo Script';
+  font-size: 26px;
+  color: black;
+ }
+ a {
+    text-decoration: none; 
+   }
+   a:hover {
+    color: #0000ff; 
+    
+   }
+   .Studio2 {
+    font-weight: 500;
+    font-family:'Roboto';
+    padding: 40px 45px;
+    font-size: 14px;
+}
+.PF {
+  font-weight: 500;
+  font-family:'Roboto';
+  padding: 40px 45px;
+    font-size: 14px;
+}
+.Conacts {
+  font-weight: 500;
+  font-family:'Roboto';
+  padding: 40px 45px;
+    font-size: 14px;
+}
+.GM {
+  font-weight: 500;
+  font-family:'Roboto';
+  padding: 40px 45px;
+    font-size: 14px;
+}
+.Telephone {
+  font-weight: 500;
+  font-family:'Roboto';
+    padding: 120px 125px;
+    font-size: 14px;
+}
+.Text1 {
+  color: white;
+  font-family:'Roboto';
+  margin-left:250px;
+  margin-right: auto;
+  font-weight: 700;
+  margin-left:400px;
+  padding-top: 200px;
+}
+
+.Text {
+  font-family:'Roboto';
+  font-weight: 700;
+  display: flex;
+  margin-left:center;
+}
+.button {
+  color: white;
+  font-family:'Roboto';
+  font-weight: 700;
+  background-color:#2196F3;
+  border:none;
+  width: 200px;
+  height: 50px;
+  top: 410px;
+  left: 726px;
+  margin-left:550px;
+  margin-right: auto;
+}
+.TextAndButton{
+
+height: 500px;
+background-color:#2F303A ;
+}
+.verse {
+  display: table;
+  margin: 0 auto; /* для центрирования display: table; не нужно указывать ширину блока, она рассчитывается самостоятельно */ 
+  white-space: pre-line; /* не нужен <br> */ 
+  word-wrap: break-word; /* чтобы слова переносились на маленьком экране */ 
+}
+.WhatWeDo {
+  font-family:'Roboto';
+  width: 366px;
+  height:42px;
+  top: 969px;
+  left:617px;
+  font-weight: 700;
+  margin-left:500px;
+  margin-right: auto;
+}
+.f1 {
+width:370px;
+height:294px;
+top: 1061px;
+left: 215px;
+margin-left:100px;
+}
+.f2 {
+  width:370px;
+height:294px;
+top: 1061px;
+left: 215px;
+}
+.f3 {
+  width:370px;
+height:294px;
+top: 1061px;
+left: 215px;
+}
+.Hyman1 {
+  width:270px;
+height:260px;
+top: 1635px;
+}
+.Hyman2 {
+  width:270px;
+height:240px;
+top: 1635px;
+}
+.Hyman3 {
+  width:270px;
+height:240px;
+top: 1635px;
+}
+.Hyman4 {
+  width:270px;
+height:240px;
+top: 1635px;
+}
+
+.Tel2 {
+font-family: 'Roboto';
+width: 231px;
+height: 21px;
+top: 2268px;
+margin-left:0px;
+font-weight: 400;
+
+}
+
+
+.Map {
+  font-family: 'Roboto';
+width: 231px;
+height: 21px;
+top: 2268px;
+margin-left:0px;
+font-weight: 400;
+}
+
+
+.GM2 {
+  font-family: 'Roboto';
+width: 231px;
+height: 21px;
+top: 2268px;
+margin-left:0px;
+font-weight: 400;
+}
+li {
+list-style: none;
+}
+.footer{
+background-color:#2F303A ;
+}
+.header{
+        border: 1.5px solid #bdbdb8f1;
+       }
+
+
+
+       .Web {
+        font-family:'Raleway' ;
+      font-size: 26px; 
+      color: #0000ff;
+     }
+     .Studio  {
+        font-family:'Oleo Script';
+      font-size: 26px;
+      color: black;
+     }
+     a {
+        text-decoration: none; 
+       }
+       a:hover {
+        color: #0000ff; 
+        
+       }
+       .Studio2 {
+        font-weight: 500;
+        font-family:'Roboto';
+        padding: 40px 45px;
+        font-size: 14px;
+    }
+    .PF {
+      font-weight: 500;
+      font-family:'Roboto';
+      padding: 40px 45px;
+        font-size: 14px;
+    }
+    .Conacts {
+      font-weight: 500;
+      font-family:'Roboto';
+      padding: 40px 45px;
+        font-size: 14px;
+    }
+    .GM {
+      font-weight: 500;
+      font-family:'Roboto';
+      padding: 40px 45px;
+        font-size: 14px;
+    }
+    .Telephone {
+      font-weight: 500;
+      font-family:'Roboto';
+        padding: 120px 125px;
+        font-size: 14px;
+    }
+    .header{
+     border: 1.5px solid #bdbdb8f1;
+    }
+    .footer{
+background-color:#2F303A ;
+}
+
+
+.box{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+.container{
+height: 368px;
+width: 270px;
+    display: flex;
+ margin-left:100px;
+  }
