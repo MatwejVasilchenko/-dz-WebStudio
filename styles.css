@@ -1,6 +1,7 @@
 
 body{
   font-family:"Roboto";
+  position: absolute;
 }
 
 a{
@@ -8,16 +9,32 @@ text-decoration:none;
 }
 
 ul{
+  
   list-style:none;
+  padding: 0;
+  margin: 0;
 }
 
+h1{
+  margin: 0;
+}
 
+h2{
+  margin: 0;
+}
+
+h3{
+  margin: 0;
+}
 
 /* header */
-header{
+header .container{
+  height: 80px;
   display:flex;
   align-items: center;
 }
+
+
 
 .heder-list{
   display:flex;
@@ -25,7 +42,6 @@ header{
 
 .heder-page{
 margin-right: 55px;
-margin-left: 93px;
 }
 
 
@@ -47,9 +63,21 @@ letter-spacing: 0.03em;
 color: #2196F3;
 }
 
-.logo span{
+.container{
+  outline: solid black 10px;
+
+padding-left:15px;
+padding-right:15px;
+ width:1200px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.header-color{
 color: black;
 }
+
 .heder-link{
 font-style: medium;
 font-size:14px;
@@ -78,27 +106,36 @@ section, header, footer{
 }
 
 .hero-section{
-width: 1600px;
-height: 600px;
+padding-top:200px;
+padding-bottom:280px;
+  left: 0px;
+  top: 80px;
 background-color:#2F303A;
+
 }
 
 .hero-text{
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+  
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
+  
   text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: #FFFFFF;
-text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+margin-left:452px;
+
 }
 
 .hero-button{
-  width: 200px;
-height: 50px;
-left: 700px;
-top: 430px;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
@@ -111,6 +148,13 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 color: #FFFFFF;
+margin-left: 724px;
+margin-top:40px;
+}
+
+.coments-section{
+  padding-top:94px;
+  padding-bottom:94px;
 }
 
 .coments-list{
@@ -138,6 +182,10 @@ letter-spacing: 0.03em;
 color: #757575;
 }
 
+.work-section{
+padding-bottom:94px;
+}
+
 .work-title{
 font-style: normal;
 font-weight: 700;
@@ -146,6 +194,7 @@ line-height: 42px;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom:50px;
 }
 
 .work-list{
@@ -157,11 +206,8 @@ margin-right: 30px;
 }
 
 .team-section{
-  width: 1600px;
-  height: 648px;
-  left: 0px;
-  top: 1449px;
-  
+  padding-top:94px;
+  padding-bottom:94px;
   background: #F5F4FA;
 }
 
@@ -178,15 +224,13 @@ color: #212121;
 
 .team-list{
   display: flex;
-  
+  margin-top:50px;
 }
 
 .team-foto{
-  width: 270px;
-height: 260px;
-left: 215px;
-top: 1635px;
+width: 270px;
 border-radius: 0px;
+
 }
 
 .team-item{
@@ -221,13 +265,20 @@ color: #757575;
 }
 
 .footer{
-  width: 1600px;
-height: 252px;
-left: 0px;
-top: 2097px;
-
-background: #2F303A;
+padding-top:60px;
+padding-bottom:60px;
+padding-left:215px;
+  background: #2F303A;
 }
+
+
+.footer-item{
+  margin-bottom:9px;
+}
+
+.footer-color{
+  color: white;
+  }
 
 .footer-map{
   font-style: normal;
@@ -236,6 +287,10 @@ background: #2F303A;
   line-height: 24px;
   letter-spacing: 0.03em; 
   color: #FFFFFF;
+  width: 231px;
+height: 21px;
+left: 215px;
+top: 2208px;
 }
 
 .footer-mail{
@@ -245,6 +300,11 @@ background: #2F303A;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  width: 231px;
+height: 21px;
+left: 215px;
+top: 2238px;
+
 }
 
 .footer-tel{
@@ -254,4 +314,9 @@ background: #2F303A;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  width: 231px;
+height: 21px;
+left: 215px;
+top: 2268px;
+
 }
