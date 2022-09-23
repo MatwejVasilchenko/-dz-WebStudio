@@ -102,7 +102,7 @@ section, header, footer{
 padding-top:200px;
 padding-bottom:200px;
 width:1600px;
-background: #2F303A 40% url(./images/heroimage.png) no-repeat;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./images/heroimage.png);
 }
 
 .hero-text{
@@ -143,6 +143,41 @@ margin-top:40px;
 display: flex;
 margin-right: 30px;
 }
+
+.cometns-item{
+margin-right:30px;
+}
+
+.cometns-item::before{
+  display: block;
+content: "";
+height: 120px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+background-color: #F5F4FA;
+margin-bottom: 30px;
+}
+
+.cometns-item:nth-child(1)::before{
+background-image: url(./images/antenna\ 1.png);
+background-size: 70px 70px;
+}
+
+.cometns-item:nth-child(2)::before{
+  background-image: url(./images/clock\ 1.png);
+  background-size: 70px 70px;
+  }
+  
+  .cometns-item:nth-child(3)::before{
+  background-image: url(./images/diagram\ 1.png);
+  background-size: 70px 70px;
+  }
+  
+  .cometns-item:nth-child(4)::before{
+  background-image: url(./images/astronaut\ 1.png);
+  background-size: 70px 70px;
+  }
 
 .coments-title{
 font-style: normal;
