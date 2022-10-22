@@ -32,6 +32,8 @@ header .container {
   margin-left: 93px;
 }
 
+
+
 .heder-page {
   margin-right: 55px;
 }
@@ -80,6 +82,11 @@ header .container {
   letter-spacing: 2%;
   color: #212121;
   fill: #757575;
+  /* transition-property:color;
+  transition-duration:250ms;
+  transition-timing-function:linear;
+  transition-delay:250ms; */
+  transition:color 250ms linear 250ms ;
 }
 
 .heder-link:hover {
@@ -93,6 +100,11 @@ header .container {
   line-height: 1.14;
   letter-spacing: 2%;
   color: #212121;
+    /* transition-property:color;
+  transition-duration:250ms;
+  transition-timing-function:linear;
+  transition-delay:250ms; */
+  transition:color 250ms linear 250ms ;
 }
 
 section,
@@ -110,6 +122,11 @@ footer {
   top: 1.16%;
   bottom: 98.43%;
   fill:currentColor;
+    /* transition-property:color;
+  transition-duration:250ms;
+  transition-timing-function:linear;
+  transition-delay:250ms; */
+  transition:color 250ms linear 250ms ;
 }
 
  .icon-header:hover {
@@ -168,26 +185,38 @@ footer {
 }
 
 .madal {
-  list-style-type: none;
-  position: fixed;
+  position: absolute;
   width: 528px;
   height: 581px;
-  left: 35%;
-  top: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-   /* display: none;  */
+   /* display: none;     */
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+   bottom: 0;
+  right: 0; 
+ 
+  background-color:rgba(0, 0, 0, 0.2);
+  z-index:10;
 }
 
 .medal-hero{
-  position: absolute;
 width: 448px;
 height: 23px;
-left: 576px;
-top: 261px;
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -200,12 +229,9 @@ color: #212121;
 }
 
 .medal-text{
-  position: absolute;
+  margin-left:40px;
   width: 22px;
   height: 14px;
-  left: 576px;
-  top: 296px;
-  
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -218,17 +244,43 @@ color: #212121;
   color: #757575;
 }
 
+.icon-medal{
+  width: 18px;
+  height: 18px;
+}
+
 .medal-textarea{
-  position: absolute;
+  padding-left:40px;
   width: 448px;
   height: 40px;
-  left: 576px;
-  top: 314px;
-  
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 color: #212121 20%;
 border-color: #212121 20%;
+}
+
+.medal-condition{
+color: #757575;
+}
+
+.medal-coment-textaera{
+  margin-left:40px;
+  resize: none;
+  box-sizing: border-box;
+  width: 448px;
+  height: 120px;
+  
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.medal-button{
+border: none;
+width: 200px;
+height: 50px;
+background: #188CE8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+color: #FFFFFF;
 }
 
 .coments-section {
@@ -330,7 +382,6 @@ border-color: #212121 20%;
 
 } */
 .positioning-item {
-  position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
@@ -577,4 +628,8 @@ padding-bottom:6px; */
 .footer-map {
   margin-top: 20px;
   margin-bottom: 9px;
+}
+
+footer .container{
+display: flex;
 }
