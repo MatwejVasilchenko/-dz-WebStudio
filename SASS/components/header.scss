@@ -1,0 +1,107 @@
+header.container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .heder-list {
+    display: flex;
+    margin-left: 93px;
+  }
+  
+  
+  
+  .heder-page {
+    margin-right: 55px;
+  }
+  
+  .contacts-item {
+    margin-right: 50px;
+  }
+  
+  .contacts-list {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .heder-contacts:hover {
+    fill: #2196f3;
+    color: #2196f3;
+  }
+  
+  .logo {
+    font-family: "Raleway";
+    font-style: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+  }
+  
+  .header-color {
+    color: black;
+  }
+  
+  .heder-link {
+    font-style: medium;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 2%;
+    color: #212121;
+    fill: #757575;
+    /* transition-property:color;
+    transition-duration:250ms;
+    transition-timing-function:linear;
+    transition-delay:250ms; */
+    transition:color 250ms linear 250ms ;
+  }
+  
+  .heder-link:hover {
+    color: #2196f3;
+    fill:#2196f3;
+  }
+  
+  .heder-contacts {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 2%;
+    color: #212121;
+      /* transition-property:color;
+    transition-duration:250ms;
+    transition-timing-function:linear;
+    transition-delay:250ms; */
+    transition:color 250ms linear 250ms ;
+  }
+  
+  section,
+  header,
+  footer {
+    outline: solid red;
+  }
+  
+  .icon-header {
+    
+    width: 16px;
+    height: 12px;
+    left: 65.75%;
+    right: 33.25%;
+    top: 1.16%;
+    bottom: 98.43%;
+    fill:currentColor;
+      /* transition-property:color;
+    transition-duration:250ms;
+    transition-timing-function:linear;
+    transition-delay:250ms; */
+    transition:color 250ms linear 250ms ;
+  }
+  
+   .icon-header:hover {
+    width: 16px;
+    height: 12px;
+    left: 65.75%;
+    right: 33.25%;
+    top: 1.16%;
+    bottom: 98.43%;
+    fill: #2196f3;
+  } 

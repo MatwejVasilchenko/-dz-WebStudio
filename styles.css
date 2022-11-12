@@ -21,7 +21,7 @@ p {
 }
 
 /* header */
-header .container {
+header.container {
   height: 80px;
   display: flex;
   align-items: center;
@@ -31,8 +31,6 @@ header .container {
   display: flex;
   margin-left: 93px;
 }
-
-
 
 .heder-page {
   margin-right: 55px;
@@ -86,12 +84,12 @@ header .container {
   transition-duration:250ms;
   transition-timing-function:linear;
   transition-delay:250ms; */
-  transition:color 250ms linear 250ms ;
+  transition: color 250ms linear 250ms;
 }
 
 .heder-link:hover {
   color: #2196f3;
-  fill:#2196f3;
+  fill: #2196f3;
 }
 
 .heder-contacts {
@@ -100,11 +98,11 @@ header .container {
   line-height: 1.14;
   letter-spacing: 2%;
   color: #212121;
-    /* transition-property:color;
+  /* transition-property:color;
   transition-duration:250ms;
   transition-timing-function:linear;
   transition-delay:250ms; */
-  transition:color 250ms linear 250ms ;
+  transition: color 250ms linear 250ms;
 }
 
 section,
@@ -114,22 +112,21 @@ footer {
 }
 
 .icon-header {
-  
   width: 16px;
   height: 12px;
   left: 65.75%;
   right: 33.25%;
   top: 1.16%;
   bottom: 98.43%;
-  fill:currentColor;
-    /* transition-property:color;
+  fill: currentColor;
+  /* transition-property:color;
   transition-duration:250ms;
   transition-timing-function:linear;
   transition-delay:250ms; */
-  transition:color 250ms linear 250ms ;
+  transition: color 250ms linear 250ms;
 }
 
- .icon-header:hover {
+.icon-header:hover {
   width: 16px;
   height: 12px;
   left: 65.75%;
@@ -137,7 +134,7 @@ footer {
   top: 1.16%;
   bottom: 98.43%;
   fill: #2196f3;
-} 
+}
 
 .hero-section {
   padding-top: 200px;
@@ -195,7 +192,7 @@ footer {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-   /* display: none;     */
+  /* display: none;     */
 }
 
 .backdrop.is-hidden {
@@ -207,80 +204,80 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-   bottom: 0;
-  right: 0; 
- 
-  background-color:rgba(0, 0, 0, 0.2);
-  z-index:10;
+  bottom: 0;
+  right: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
-.medal-hero{
-width: 448px;
-height: 23px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 23px;
-text-align: center;
-letter-spacing: 0.03em;
+.medal-hero {
+  width: 448px;
+  height: 23px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: #212121;
+  color: #212121;
 }
 
-.medal-text{
-  margin-left:40px;
+.medal-text {
+  margin-left: 40px;
   width: 22px;
   height: 14px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   /* identical to box height */
-  
+
   letter-spacing: 0.01em;
-  
+
   color: #757575;
 }
 
-.icon-medal{
+.icon-medal {
   width: 18px;
   height: 18px;
 }
 
-.medal-textarea{
-  padding-left:40px;
+.medal-textarea {
+  padding-left: 40px;
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-color: #212121 20%;
-border-color: #212121 20%;
+  color: #212121 20%;
+  border-color: #212121 20%;
 }
 
-.medal-condition{
-color: #757575;
+.medal-condition {
+  color: #757575;
 }
 
-.medal-coment-textaera{
-  margin-left:40px;
+.medal-coment-textaera {
+  margin-left: 40px;
   resize: none;
   box-sizing: border-box;
   width: 448px;
   height: 120px;
-  
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
 
-.medal-button{
-border: none;
-width: 200px;
-height: 50px;
-background: #188CE8;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-color: #FFFFFF;
+.medal-button {
+  border: none;
+  width: 200px;
+  height: 50px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
 }
 
 .coments-section {
@@ -394,8 +391,8 @@ color: #FFFFFF;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top:27px;
-  padding-bottom:27px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
 }
@@ -466,7 +463,7 @@ color: #FFFFFF;
 .icon-elipce {
   width: 20px;
   height: 20px;
-  fill:#AFB1B8;
+  fill: #afb1b8;
 }
 
 .icon-list {
@@ -522,9 +519,8 @@ color: #FFFFFF;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.reklam-list{
+.reklam-list {
   display: flex;
-  
 }
 
 .footer-reklam {
@@ -630,6 +626,6 @@ padding-bottom:6px; */
   margin-bottom: 9px;
 }
 
-footer .container{
-display: flex;
+footer .container {
+  display: flex;
 }
