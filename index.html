@@ -27,29 +27,32 @@
         </ul>
         <ul class="contacts-list">
           <li class="contacts-item">
-            <a class="heder-contacts" href="mailto:info@example.com">
-              <svg class="icon-header">
+            <a class="contacts-link" href="mailto:info@example.com">
+              <svg class="contacts-icon">
                 <use href="./images/symbol-defs.svg#icon-w-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="contacts-item">
-            <a class="heder-contacts" href="tel:+380991111111">
-              <svg class="icon-header">
+            <a class="contacts-link" href="tel:+380991111111">
+              <svg class="contacts-icon">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 099 111 11 11
             </a>
           </li>
         </ul>
+        <button type="button" data-open-mobile class="header-button">
+          кнопка
+        </button>
       </div>
     </header>
 
     <!-- Main -->
 
     <main>
-      <!-- Section Hero -->
+      <!-- Section Hero  -->
       <section class="hero-section">
         <h1 class="hero-text">
           ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
@@ -93,6 +96,7 @@
           </ul>
         </div>
       </section>
+      -->
       <!-- Section we-doing -->
       <section class="work-section">
         <div class="container">
@@ -100,8 +104,7 @@
           <ul class="work-list">
             <li class="work-item">
               <img class="work-foto" src="./images/box1.jpg" alt="img1" />
-              <a class="positioning-item">ДЕСКТОПНІ ЗАСТОСУНКИ
-              </a>
+              <a class="positioning-item">ДЕСКТОПНІ ЗАСТОСУНКИ </a>
             </li>
             <li class="work-item">
               <img class="work-foto" src="./images/img.jpg" alt="img2" />
@@ -233,6 +236,7 @@
           </ul>
         </div>
       </section>
+      -->
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -256,91 +260,118 @@
           <li class="fotter-item">
             <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
-          </ul>
-          <h1 class="reklam-text"> Приєднуйтесь</h1>
-          <ul class="reklam-list">
-            <li class="reklam-item">
-              <a class="footer-reklam">
-                <svg class="icon-elipce">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-  
-                <svg class="icon-elipce">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-  
-                <svg class="icon-elipce">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-  
-                <svg class="icon-elipce">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          </ul>
+        </ul>
+        <h1 class="reklam-text">Приєднуйтесь</h1>
+        <ul class="reklam-list">
+          <li class="reklam-item">
+            <a class="footer-reklam">
+              <svg class="icon-elipce">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+
+              <svg class="icon-elipce">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+
+              <svg class="icon-elipce">
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+
+              <svg class="icon-elipce">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
-    <!-- /Footer -->
-    <div data-backdrop class="backdrop">
+    <!-- ЕЕМОДАЛ -->
+     <div data-backdrop class="backdrop is-hidden">
       <div class="madal">
-        <button data-close-modal> 
+        <button data-close-modal>
           <svg class="icon-medal">
-            <use href="./images/symbol-defs.svg#icon-x">
-            </use>
+            <use href="./images/symbol-defs.svg#icon-x"></use>
           </svg>
         </button>
-        
 
-          <p class="medal-hero">Залиште свої дані, ми Вам зателефонуємо</p>
-         <label for="name" class="medal-text">Ім’я</label>
-         <svg class="icon-medal">
-          <use href="./images/symbol-defs.svg#icon-name">
-          </use>
+        <p class="medal-hero">Залиште свої дані, ми Вам зателефонуємо</p>
+        <label for="name" class="medal-text">Ім’я</label>
+        <svg class="icon-medal">
+          <use href="./images/symbol-defs.svg#icon-name"></use>
         </svg>
-        <input id="name" class="medal-textarea">
+        <input id="name" class="medal-textarea" />
         <p class="medal-text">Телефон</p>
         <svg class="icon-medal">
-          <use href="./images/symbol-defs.svg#telefonenumber">
-          </use>
+          <use href="./images/symbol-defs.svg#telefonenumber"></use>
         </svg>
-       <input class="medal-textarea">
-      <p class="medal-text">Пошта</p>
-      <svg class="icon-medal">
-        <use href="./images/symbol-defs.svg#gmailadress">
-        </use>
-      </svg>
-     <input class="medal-textarea">
-   <textarea class="medal-coment-textaera" placeholder="коментарі">
-   </textarea>
-   <p class="medal-condition">
-    Погоджуюсь з розсилкою і приймаю Умови договору
-  </p>
-   <button class="medal-button">
-    Надіслати
-   </button>
-   </div>
+        <input class="medal-textarea" />
+        <p class="medal-text">Пошта</p>
+        <svg class="icon-medal">
+          <use href="./images/symbol-defs.svg#gmailadress"></use>
+        </svg>
+        <input class="medal-textarea" />
+        <textarea class="medal-coment-textaera" placeholder="коментарі">
+        </textarea>
+        <p class="medal-condition">
+          Погоджуюсь з розсилкою і приймаю Умови договору
+        </p>
+        <button class="medal-button">Надіслати</button>
       </div>
+    </div>
+    <div data-backdrop-mobile  class="mobile-backdrop is-hidden">
+      <div class="mobile-modal">
+        <button type="button" class="mobile-close" data-close-mobile>
+          <svg class="icon-medal">
+            <use  href="./images/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+     <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector("[data-open-modal]"),
+          closeModalBtn: document.querySelector("[data-close-modal]"),
+          backdrop: document.querySelector("[data-backdrop]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        refs.backdrop.addEventListener("click", logBackdropClick);
+
+        function toggleModal() {
+          refs.backdrop.classList.toggle("is-hidden");
+        }
+
+        function logBackdropClick() {
+          console.log("Це клік в бекдроп");
+        }
+      })();
+    </script>
+
     <script>
-      const refs = {
-        openModalBtn: document.querySelector('[data-open-modal]'),
-        closeModalBtn: document.querySelector('[data-close-modal]'),
-        backdrop: document.querySelector('[data-backdrop]'),
-      };
+      (() => {
+        const refs = {
+          openMobileBtn: document.querySelector("[data-open-mobile]"),
+          closeMobilelBtn: document.querySelector("[data-close-mobile]"),
+          backdrop: document.querySelector("[data-backdrop-mobile]"),
+        };
 
-      refs.openModalBtn.addEventListener('click', toggleModal);
-      refs.closeModalBtn.addEventListener('click', toggleModal);
+        refs.openMobileBtn.addEventListener("click", toggleModal);
+        refs.closeMobileBtn.addEventListener("click", toggleModal);
 
-      refs.backdrop.addEventListener('click', logBackdropClick);
+        refs.backdrop.addEventListener("click", logBackdropClick);
 
-      function toggleModal() {
-        refs.backdrop.classList.toggle('is-hidden');
-      }
+        function toggleModal() {
+          refs.backdrop.classList.toggle("is-hidden");
+        }
 
-      function logBackdropClick() {
-        console.log('Це клік в бекдроп');
-      }
+        function logBackdropClick() {
+          console.log("Це клік в бекдроп");
+        }
+      })();
     </script>
   </body>
 </html>

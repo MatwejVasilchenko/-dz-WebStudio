@@ -6,6 +6,8 @@
   .coments-list {
     display: flex;
     margin-right: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .cometns-item {

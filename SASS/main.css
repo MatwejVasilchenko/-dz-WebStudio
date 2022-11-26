@@ -21,12 +21,31 @@ p {
 }
 
 .container {
-  outline: solid black 10px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+section,
+header,
+footer {
+  outline: solid red;
 }
 
 header .container {
@@ -34,28 +53,38 @@ header .container {
   display: flex;
   align-items: center;
 }
-
 .heder-list {
-  display: flex;
+  display: none;
   margin-left: 93px;
+}
+@media screen and (min-width: 768px) {
+  .heder-list {
+    display: flex;
+  }
 }
 
 .heder-page {
   margin-right: 55px;
 }
-
-.contacts-item {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts-item {
+    margin-right: 50px;
+  }
 }
 
 .contacts-list {
-  display: flex;
+  display: none;
   margin-left: auto;
 }
-
-.heder-contacts:hover {
-  fill: #2196f3;
-  color: #2196f3;
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+  }
 }
 
 .logo {
@@ -66,7 +95,6 @@ header .container {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-
 .header-color {
   color: black;
 }
@@ -84,18 +112,17 @@ header .container {
   transition-delay:250ms; */
   transition: color 250ms linear 250ms;
 }
-
 .heder-link:hover {
   color: #2196f3;
   fill: #2196f3;
 }
 
-.heder-contacts {
+.contacts-link {
   font-family: "Roboto";
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 2%;
-  color: #212121;
+  color: #757575;
   /* transition-property:color;
   transition-duration:250ms;
   transition-timing-function:linear;
@@ -103,19 +130,13 @@ header .container {
   transition: color 250ms linear 250ms;
 }
 
-section,
-header,
-footer {
-  outline: solid red;
+.contacts-link:hover {
+  color: #2196f3;
 }
 
-.icon-header {
+.contacts-icon {
   width: 16px;
   height: 12px;
-  left: 65.75%;
-  right: 33.25%;
-  top: 1.16%;
-  bottom: 98.43%;
   fill: currentColor;
   /* transition-property:color;
   transition-duration:250ms;
@@ -124,40 +145,72 @@ footer {
   transition: color 250ms linear 250ms;
 }
 
-.icon-header:hover {
-  width: 16px;
-  height: 12px;
-  left: 65.75%;
-  right: 33.25%;
-  top: 1.16%;
-  bottom: 98.43%;
-  fill: #2196f3;
+@media screen and (min-width: 768px) {
+  .header-button {
+    display: none;
+  }
+}
+.mobile-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .mobile-backdrop {
+    display: none;
+  }
+}
+
+.mobile-backdrop.is-hidden {
+  opacity: 0;
+}
+
+.mobile-modal {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/heroimage.png);
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
 }
 
 .hero-text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .hero-text {
+    font-size: 44px;
+  }
+}
 
 .hero-button {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -166,7 +219,8 @@ footer {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-left: 724px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
   padding-left: 24px;
   padding-right: 24px;
@@ -174,7 +228,6 @@ footer {
   padding-bottom: 10px;
   border: none;
 }
-
 .coments-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -183,6 +236,8 @@ footer {
 .coments-list {
   display: flex;
   margin-right: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cometns-item {
@@ -260,6 +315,7 @@ footer {
 .team-list {
   display: flex;
   margin-top: 50px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -328,7 +384,6 @@ footer {
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 10;
 }
 
 .medal-hero {
@@ -413,6 +468,7 @@ footer {
 
 .work-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 

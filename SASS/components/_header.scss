@@ -1,32 +1,57 @@
+section,
+header,
+footer {
+  outline: solid red;
+}
+
 header .container {
     height: 80px;
     display: flex;
     align-items: center;
+    
+    @media screen and (min-width:768px) {
+      
+    }
+    @media screen and (min-width:1200px) {
+      
+    }
   }
   
   .heder-list {
-    display: flex;
+    display: none;
     margin-left: 93px;
+    @media screen and (min-width:768px) {
+      display: flex;
+    }
   }
   
   
   
   .heder-page {
     margin-right: 55px;
+    @media screen and (min-width:768px) {
+      
+    }
+    @media screen and (min-width:1200px) {
+      
+    }
   }
   
   .contacts-item {
-    margin-right: 50px;
+    @media screen and (min-width:1200px) {
+      margin-right: 50px;
+    }
   }
   
   .contacts-list {
-    display: flex;
+    display: none;
     margin-left: auto;
-  }
-  
-  .heder-contacts:hover {
-    fill: #2196f3;
-    color: #2196f3;
+    @media screen and (min-width:768px) {
+      display: block;
+    }
+    @media screen and (min-width:1200px) {
+      display: flex;
+    }
   }
   
   .logo {
@@ -36,10 +61,17 @@ header .container {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196f3;
+    @media screen and (min-width:768px) {
+      
+    }
+    @media screen and (min-width:1200px) {
+      
+    }
   }
   
   .header-color {
     color: black;
+
   }
   
   .heder-link {
@@ -54,6 +86,12 @@ header .container {
     transition-timing-function:linear;
     transition-delay:250ms; */
     transition:color 250ms linear 250ms ;
+    @media screen and (min-width:768px) {
+      
+    }
+    @media screen and (min-width:1200px) {
+      
+    }
   }
   
   .heder-link:hover {
@@ -61,12 +99,12 @@ header .container {
     fill:#2196f3;
   }
   
-  .heder-contacts {
+  .contacts-link {
     font-family: "Roboto";
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 2%;
-    color: #212121;
+    color: #757575;
       /* transition-property:color;
     transition-duration:250ms;
     transition-timing-function:linear;
@@ -74,34 +112,29 @@ header .container {
     transition:color 250ms linear 250ms ;
   }
   
-  section,
-  header,
-  footer {
-    outline: solid red;
+  .contacts-link:hover {
+    color: #2196f3;
   }
+
   
-  .icon-header {
+  .contacts-icon {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+      /* transition-property:color;
+    transition-duration:250ms;
+    transition-timing-function:linear;
+    transition-delay:250ms; */
+    transition:color 250ms linear 250ms ;
+  }
+
+
+  .header-button{
     
-    width: 16px;
-    height: 12px;
-    left: 65.75%;
-    right: 33.25%;
-    top: 1.16%;
-    bottom: 98.43%;
-    fill:currentColor;
-      /* transition-property:color;
-    transition-duration:250ms;
-    transition-timing-function:linear;
-    transition-delay:250ms; */
-    transition:color 250ms linear 250ms ;
+    @media screen and (min-width:768px) {
+      display: none;
+    }
+    @media screen and (min-width:1200px) {
+
+    }
   }
-  
-   .icon-header:hover {
-    width: 16px;
-    height: 12px;
-    left: 65.75%;
-    right: 33.25%;
-    top: 1.16%;
-    bottom: 98.43%;
-    fill: #2196f3;
-  } 
