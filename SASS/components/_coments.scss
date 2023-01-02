@@ -5,13 +5,14 @@
   
   .coments-list {
     display: flex;
-    margin-right: 30px;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    
   }
   
   .cometns-item {
-    margin-right: 30px;
+    width: 270px;
   }
   
   .cometns-item::before {
@@ -54,7 +55,10 @@
     text-transform: uppercase;
     color: #212121;
     margin-bottom: 10px;
+    
   }
+
+
   
   .coments-text {
     font-family: "Roboto";

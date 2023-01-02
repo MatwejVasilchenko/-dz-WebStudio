@@ -238,6 +238,8 @@ header .container {
 .footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-item {
@@ -290,11 +292,13 @@ header .container {
   color: #FFFFFF;
 }
 
+.reklam-container {
+  margin-left: 70px;
+}
+
 .footer-reklam {
   width: 116px;
   height: 16px;
-  left: 516px;
-  top: 2749px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;

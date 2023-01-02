@@ -43,6 +43,7 @@
             </a>
           </li>
         </ul>
+        
         <button type="button" data-open-mobile class="header-button">
           кнопка
         </button>
@@ -103,15 +104,24 @@
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-item">
-              <img class="work-foto" src="./images/box1.jpg" alt="img1" />
+                </picture>
+                <source media="(min-width: 1200px)" srcset="./images/work/work1/desktop/work1-desktop@1x.jpg, ./images/work/work1/desktop/work1-desktop@2x.jpg"> 
+              <img class="work-foto" src="./images/work/work1/desktop/work1-desktop@1x.jpg" alt="img1" />
+            </picture>
               <a class="positioning-item">ДЕСКТОПНІ ЗАСТОСУНКИ </a>
             </li>
             <li class="work-item">
-              <img class="work-foto" src="./images/img.jpg" alt="img2" />
+            </picture>
+            <source media="(min-width: 1200px)" srcset="./images/work/work2/desktop/work2-desktop@1x.jpg, ./images/work/work2/desktop/work2-desktop@2x.jpg"> 
+          <img class="work-foto" src="./images/work/work2/desktop/work2-desktop@1x.jpg" alt="img1" />
+        </picture>
               <a class="positioning-item">МОБІЛЬНІ ЗАСТОСУНКИ</a>
             </li>
             <li class="work-item">
-              <img class="work-foto" src="./images/box3.jpg" alt="img3" />
+            </picture>
+            <source media="(min-width: 1200px)" srcset="./images/work/work3/desktop/work3-desktop@1x.jpg, ./images/work/work3/desktop/work3-desktop@2x.jpg"> 
+          <img class="work-foto" src="./images/work/work3/desktop/work3-desktop@1x.jpg" alt="img1" />
+        </picture>
               <a class="positioning-item">ДИЗАЙНЕРСЬКІ РІШЕННЯ</a>
             </li>
           </ul>
@@ -123,7 +133,13 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img class="team-foto" src="./images/img(1).jpg" alt="img4" />
+             
+              <picture>
+                <source media="(max-width: 767px)" srcset="./images/team/1img/mobile/team1-mobile@1x.jpg, ./images/team/1img/mobile/team1-mobile@2x.jpg"> 
+                <source media="(min-width: 1200px)" srcset="./images/team/1img/desktop/team1-desktop@1x.jpg, ./images/team/1img/desktop/team1-desktop@2x.jpg"> 
+                <source media="(min-width: 768px)" srcset="./images/team/1img/tablet/team1-tablet@1x.jpg, ./images/team/1img/tablet/team1-tablet@2x.jpg"> 
+              <img class="team-foto" src="./images/team/1img/tablet/team1-tablet@1x.jpg" alt="img4" />
+            </picture>
               <h2 class="team-name">Ігор Дем’яненко</h2>
               <p class="team-coment">Product Designer</p>
               <ul class="icon-list">
@@ -150,7 +166,12 @@
               </ul>
             </li>
             <li class="team-item">
-              <img class="team-foto" src="./images/img(2).jpg" alt="img5" />
+              <picture>
+                <source media="(max-width: 767px)" srcset="./images/team/2img/mobile/team2-mobile@1x.jpg, ./images/team/2img/mobile/team2-mobile@2x.jpg"> 
+                <source media="(min-width: 1200px)" srcset="./images/team/2img/desktop/team2-desktop@1x.jpg, ./images/team/2img/desktop/team2-desktop@2x.jpg"> 
+                <source media="(min-width: 768px)" srcset="./images/team/2img/tablet/team2-tablet@1x.jpg, ./images/team/2img/tablet/team2-tablet@2x.jpg"> 
+              <img class="team-foto" src="./images/team/2img/tablet/team2-tablet@1x.jpg" alt="img5" />
+            </picture>
               <h2 class="team-name">Ольга Репіна</h2>
               <p class="team-coment">Frontend Developer</p>
 
@@ -178,7 +199,12 @@
               </ul>
             </li>
             <li class="team-item">
-              <img class="team-foto" src="./images/img(3).jpg" alt="img6" />
+              <picture>
+                <source media="(max-width: 767px)" srcset="./images/team/3img/mobile/team3-mobile@1x.jpg, ./images/team/3img/mobile/team3-mobile@2x.jpg"> 
+                <source media="(min-width: 1200px)" srcset="./images/team/3img/desktop/team3-desktop@1x.jpg, ./images/team/3img/desktop/team3-desktop@2x.jpg"> 
+                <source media="(min-width: 768px)" srcset="./images/team/3img/tablet/team3-tablet@1x.jpg, ./images/team/3img/tablet/team3-tablet@2x.jpg"> 
+              <img class="team-foto" src="./images/team/3img/tablet/team3-tablet@1x.jpg" alt="img5" />
+            </picture>
               <h2 class="team-name">Микола Тарасов</h2>
               <p class="team-coment">Marketing</p>
 
@@ -206,7 +232,12 @@
               </ul>
             </li>
             <li class="team-item">
-              <img class="team-foto" src="./images/img(4).jpg" alt="img7" />
+              <picture>
+                <source media="(max-width: 767px)" srcset="./images/team/4img/mobile/team4-mobile@1x.jpg, ./images/team/4img/mobile/team4-mobile@2x.jpg"> 
+                <source media="(min-width: 1200px)" srcset="./images/team/4img/desktop/team4-desktop@1x.jpg, ./images/team/4img/desktop/team4-desktop@2x.jpg"> 
+                <source media="(min-width: 768px)" srcset="./images/team/4img/tablet/team4-tablet@1x.jpg, ./images/team/4img/tablet/team4-tablet@2x.jpg"> 
+              <img class="team-foto" src="./images/team/4img/tablet/team4-tablet@1x.jpg" alt="img5" />
+            </picture>
               <h2 class="team-name">Михайло Єрмаков</h2>
               <p class="team-coment">UI Designer</p>
 
@@ -236,11 +267,51 @@
           </ul>
         </div>
       </section>
-      -->
+      <!-- Постійні кліенти -->
+      <div class="client">
+        <p class="client-text">
+          Постійні клієнти
+        </p>
+        <ul class="client-list">
+          <li class="client-item">
+            <svg class="icon-client">
+              <use href="./images/symbol-defs.svg#icon-client1"></use>
+            </svg>
+          </li>
+          <li class="client-item">
+            <svg class="icon-client">
+              <use href="./images/symbol-defs.svg#icon-client2"></use>
+            </svg>
+          </li>
+          <li class="client-item">
+            <svg class="icon-client">
+              <use href="./images/symbol-defs.svg#icon-client3"></use>
+            </svg>
+          </li>
+          <li class="client-item">
+            <svg class="icon-client">
+              <use href="./images/symbol-defs.svg#icon-client4"></use>
+            </svg>
+          </li>
+          <li class="client-item">
+            <svg class="icon-client">
+              <use href="./images/symbol-defs.svg#icon-client5"></use>
+            </svg>
+          </li>
+          <li class="client-item">
+            <svg class="icon-client">
+              <use href="./images/symbol-defs.svg#icon-client6"></use>
+            </svg>
+          </li>
+          
+        </ul>
+      </div>
+
     </main>
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
+        <div>
         <ul class="footer-list">
           <li class="fotter-item">
             <a class="logo" href="/index.html"
@@ -261,6 +332,8 @@
             <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
+      </div>
+        <div class="reklam-container">
         <h1 class="reklam-text">Приєднуйтесь</h1>
         <ul class="reklam-list">
           <li class="reklam-item">
@@ -283,6 +356,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </div>
     </footer>
     <!-- ЕЕМОДАЛ -->

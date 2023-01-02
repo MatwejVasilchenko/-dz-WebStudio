@@ -1,5 +1,9 @@
 .work-section {
     padding-bottom: 94px;
+    display: none;
+    @media screen and (min-width:1200px) {
+      display: block;
+    }
   }
   
   .work-title {
@@ -17,21 +21,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
   }
   
   .work-item {
-    margin-right: 30px;
     position: relative;
   }
   
-  .work-item:last-child {
-    margin-right: 0;
-  }
   
   /* .work-foto{
   
   } */
   .positioning-item {
+    position: absolute;
     width: 100%;
     left: 0;
     bottom: 0;

@@ -1,0 +1,51 @@
+.client{
+    width: 480px;
+    height: 519px;
+    left: 0px;
+    top: 0px;
+    
+    margin-top: 60px;
+
+    background: #FFFFFF;
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+        height: 397px;
+    }
+    @media screen and (min-width:1200px) {
+        width: 1600px;
+        height: 372px;
+        margin-top: 94px;
+    }
+}
+
+.client-text{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+}
+
+.client-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.client-item{
+    width: 210px;
+    height: 92px;
+
+
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
